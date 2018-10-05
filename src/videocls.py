@@ -65,6 +65,8 @@ def make_net(ims, samples, pr, reuse = True, train = True):
     raise RuntimeError()
 
 def read_data(pr, gpus):
+  
+  #We will have to change the dataset, and then divide across gpus
   """ This is the code for reading data. We suggest rewriting the I/O code for your own applications"""
   if pr.variable_frame_count:
     #import shift_dset
